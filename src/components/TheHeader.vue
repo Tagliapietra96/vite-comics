@@ -78,7 +78,7 @@ header {
                 display: flex;
                 align-items: center;
                 position: relative;
-                
+
                 a {
                     color: $dark;
                     text-decoration: none;
@@ -86,7 +86,7 @@ header {
                     font-weight: bold;
                 }
 
-                &::after{
+                &::after {
                     background-color: transparent;
                     right: 50%;
                     left: 50%;
@@ -94,7 +94,7 @@ header {
                 }
 
                 &:hover {
-                    &::after{
+                    &::after {
                         content: '';
                         background-color: $primary;
                         position: absolute;
@@ -103,6 +103,7 @@ header {
                         left: 0;
                         height: $s-1;
                     }
+
                     a {
                         color: $primary;
                     }
@@ -112,4 +113,5 @@ header {
         }
     }
 }
+
 </style>
