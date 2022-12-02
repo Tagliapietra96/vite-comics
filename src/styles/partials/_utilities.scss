@@ -1,0 +1,19 @@
+@use './variables' as *;
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg-w{
+    background-color: white;
+}
+.bg-d{
+    background-color: black;
+}
+.bg-1{
+    background-color: $primary;
+}
+.bg-2{
+    background-color: $secondary;
+}
