@@ -3,35 +3,8 @@
         <div class="container">
             <img src="../../public/img/dc-logo.png" alt="">
             <ul>
-                <li>
-                    <a href="#">CHARACTERS</a>
-                </li>
-                <li>
-                    <a href="#">COMICS</a>
-                </li>
-                <li>
-                    <a href="#">MOVIES</a>
-                </li>
-                <li>
-                    <a href="#">TV</a>
-                </li>
-                <li>
-                    <a href="#">GAMES</a>
-                </li>
-                <li>
-                    <a href="#">COLLECTIBLES</a>
-                </li>
-                <li>
-                    <a href="#">VIDEOS</a>
-                </li>
-                <li>
-                    <a href="#">FANS</a>
-                </li>
-                <li>
-                    <a href="#">NEWS</a>
-                </li>
-                <li>
-                    <a href="#">SHOP</a>
+                <li v-for="element in headerMenuList">
+                    <a href="#">{{element.toUpperCase()}}</a>
                 </li>
             </ul>
         </div>
@@ -42,7 +15,22 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+            headerMenuList: [
+                'characters',
+                'comics',
+                'movies',
+                'tv',
+                'games',
+                'collectibles',
+                'videos',
+                'fans',
+                'news',
+                'shop',
+            ]
+        };
+    },
 }
 </script>
 
@@ -113,5 +101,4 @@ header {
         }
     }
 }
-
 </style>
