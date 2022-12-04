@@ -101,4 +101,13 @@ header {
         }
     }
 }
+@media screen and (max-width: 870px) {
+    header{
+        .container{
+            ul{
+                display: none;
+            }
+        }
+    }
+}
 </style>
