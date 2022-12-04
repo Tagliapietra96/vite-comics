@@ -86,7 +86,7 @@ header {
                         content: '';
                         background-color: $primary;
                         position: absolute;
-                        bottom: 0;
+                        bottom: -$s-3;
                         right: 0;
                         left: 0;
                         height: $s-1;
