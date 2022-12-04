@@ -70,8 +70,9 @@ header {
                 a {
                     color: $dark;
                     text-decoration: none;
-                    padding: $s-2;
+                    padding: $s-4;
                     font-weight: bold;
+                    font-size: .7rem;
                 }
 
                 &::after {
@@ -101,7 +102,7 @@ header {
         }
     }
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1000px) {
     header{
         .container{
             ul{
