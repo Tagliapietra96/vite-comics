@@ -4,7 +4,7 @@
             <img src="../../public/img/dc-logo.png" alt="">
             <ul>
                 <li v-for="element in headerMenuList">
-                    <a href="#">{{element.toUpperCase()}}</a>
+                    <a :href="element.url">{{ element.text.toUpperCase() }}</a>
                 </li>
             </ul>
         </div>
@@ -18,16 +18,56 @@ export default {
     data() {
         return {
             headerMenuList: [
-                'characters',
-                'comics',
-                'movies',
-                'tv',
-                'games',
-                'collectibles',
-                'videos',
-                'fans',
-                'news',
-                'shop',
+                {
+                    text: 'characters',
+                    url: '#'
+
+                },
+                {
+                    text: 'comics',
+                    url: '#'
+
+                },
+                {
+                    text: 'movies',
+                    url: '#'
+
+                },
+                {
+                    text: 'tv',
+                    url: '#'
+
+                },
+                {
+                    text: 'games',
+                    url: '#'
+
+                },
+                {
+                    text: 'collectibles',
+                    url: '#'
+
+                },
+                {
+                    text: 'videos',
+                    url: '#'
+
+                },
+                {
+                    text: 'fans',
+                    url: '#'
+
+                },
+                {
+                    text: 'news',
+                    url: '#'
+
+                },
+                {
+                    text: 'shop',
+                    url: '#'
+
+                },
             ]
         };
     },
@@ -102,10 +142,11 @@ header {
         }
     }
 }
+
 @media screen and (max-width: 1000px) {
-    header{
-        .container{
-            ul{
+    header {
+        .container {
+            ul {
                 display: none;
             }
         }

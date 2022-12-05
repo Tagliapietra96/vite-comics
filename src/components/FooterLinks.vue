@@ -8,7 +8,7 @@
                             <h3>DC COMICS</h3>
                         </li>
                         <li v-for="element in dcComicsList">
-                            <a href="#">{{ element }}</a>
+                            <a :href="element.url">{{ element.text }}</a>
                         </li>
                     </ul>
 
@@ -17,7 +17,7 @@
                             <h3>SHOP</h3>
                         </li>
                         <li v-for="element in shopList">
-                            <a href="#">{{ element }}</a>
+                            <a :href="element.url">{{ element.text }}</a>
                         </li>
                     </ul>
                 </div>
@@ -27,7 +27,7 @@
                         <h3>DC</h3>
                     </li>
                     <li v-for="element in dcList">
-                        <a href="#">{{ element }}</a>
+                        <a :href="element.url">{{ element.text }}</a>
                     </li>
                 </ul>
 
@@ -36,7 +36,7 @@
                         <h3>SITES</h3>
                     </li>
                     <li v-for="element in sitesList">
-                        <a href="#">{{ element }}</a>
+                        <a :href="element.url">{{ element.text }}</a>
                     </li>
                 </ul>
             </div>
@@ -51,37 +51,137 @@ export default {
     data() {
         return {
             dcComicsList: [
-                'Characters',
-                'Comics',
-                'Movies',
-                'TV',
-                'Games',
-                'Videos',
-                'News',
+                {
+                    text: 'Characters',
+                    url: '#'
+
+                },
+                {
+                    text: 'Comics',
+                    url: '#'
+
+                },
+                {
+                    text: 'Movies',
+                    url: '#'
+
+                },
+                {
+                    text: 'TV',
+                    url: '#'
+
+                },
+                {
+                    text: 'Games',
+                    url: '#'
+
+                },
+                {
+                    text: 'Videos',
+                    url: '#'
+
+                },
+                {
+                    text: 'News',
+                    url: '#'
+
+                },
             ],
             shopList: [
-                'Shop DC',
-                'Shop DC Collections'
+                {
+                    text: 'Shop DC',
+                    url: '#'
+
+                },
+                {
+                    text: 'Shop DC Collections',
+                    url: '#'
+
+                },
             ],
             dcList: [
-                'Terms Of Use',
-                'Privacy Policy (New)',
-                'Ad Choices',
-                'Advertising',
-                'Jobs',
-                'Subscriptions',
-                'Talent Workspace',
-                'CPSC Certnificates',
-                'Ratings',
-                'Shop Help',
-                'Contact US'
+                {
+                    text: 'Terms Of Use',
+                    url: '#'
+
+                },
+                {
+                    text: 'Privacy Policy (New)',
+                    url: '#'
+
+                },
+                {
+                    text: 'Ad Choices',
+                    url: '#'
+
+                },
+                {
+                    text: 'Advertising',
+                    url: '#'
+
+                },
+                {
+                    text: 'Jobs',
+                    url: '#'
+
+                },
+                {
+                    text: 'Subscriptions',
+                    url: '#'
+
+                },
+                {
+                    text: 'Talent Workspace',
+                    url: '#'
+
+                },
+                {
+                    text: 'CPSC Certnificates',
+                    url: '#'
+
+                },
+                {
+                    text: 'Ratings',
+                    url: '#'
+
+                },
+                {
+                    text: 'Shop Help',
+                    url: '#'
+
+                },
+                {
+                    text: 'Contact US',
+                    url: '#'
+
+                },
             ],
             sitesList: [
-                'DC',
-                'MAD Magazine',
-                'DC Kids',
-                'DC Universe',
-                'DC Power Visa'
+                {
+                    text: 'DC',
+                    url: '#'
+
+                },
+                {
+                    text: 'MAD Magazine',
+                    url: '#'
+
+                },
+                {
+                    text: 'DC Kids',
+                    url: '#'
+
+                },
+                {
+                    text: 'DC Universe',
+                    url: '#'
+
+                },
+                {
+                    text: 'DC Power Visa',
+                    url: '#'
+
+                },
             ]
         }
     }
