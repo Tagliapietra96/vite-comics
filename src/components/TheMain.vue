@@ -1,6 +1,6 @@
 <template>
     <main>
-        <Content></Content>
+        <Content :comics-list="comicsList"></Content>
         <ProductsBanner></ProductsBanner>
     </main>
 </template>
@@ -11,7 +11,10 @@
 import Content from './Content.vue';
 import ProductsBanner from './ProductsBanner.vue';
 export default {
-    components: { Content, ProductsBanner }
+    components: { Content, ProductsBanner },
+    props: {
+        comicsList: Array,
+    },
 }
 </script>
 

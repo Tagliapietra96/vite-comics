@@ -1,9 +1,7 @@
 <template>
     <section class="bg-d">
         <div class="container">
-            <h1>
-                qua va il contenuto!!!
-            </h1>
+            <h1 v-for="element in comicsList">{{element.series}}</h1>
         </div>
     </section>
 </template>
@@ -12,7 +10,9 @@
 
 <script>
 export default {
-
+    props:{
+        comicsList: Array,
+    }
 }
 </script>
 
@@ -20,13 +20,10 @@ export default {
 <style scoped lang="scss">
 @use '../styles/partials/variables' as *;
 
- section {
-     height: 200px;
-     h1{
-        color: white;
-        font-size: 5rem;
-        line-height: 200px;
-        text-align: center;
-     }
- }
+section{
+    padding: 200px 0;
+    h1{
+        color:white;
+    }
+}
 </style>

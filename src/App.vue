@@ -1,6 +1,6 @@
 <template>
   <TheHeader></TheHeader>
-  <TheMain></TheMain>
+  <TheMain :comics-list="comicsList"></TheMain>
   <TheFooter></TheFooter>
 </template>
 
